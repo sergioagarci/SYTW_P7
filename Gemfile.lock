@@ -1,7 +1,22 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.5)
     daemons (1.1.9)
+    data_objects (0.10.13)
+      addressable (~> 2.1)
+    dm-core (1.2.1)
+      addressable (~> 2.3)
+    dm-do-adapter (1.2.0)
+      data_objects (~> 0.10.6)
+      dm-core (~> 1.2.0)
+    dm-migrations (1.2.0)
+      dm-core (~> 1.2.0)
+    dm-sqlite-adapter (1.2.0)
+      dm-do-adapter (~> 1.2.0)
+      do_sqlite3 (~> 0.10.6)
+    do_sqlite3 (0.10.13)
+      data_objects (= 0.10.13)
     eventmachine (1.0.3)
     haml (4.0.4)
       tilt
@@ -23,6 +38,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dm-core
+  dm-migrations
+  dm-sqlite-adapter
   haml
   sass
   sinatra
