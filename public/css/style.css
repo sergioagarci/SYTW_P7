@@ -25,11 +25,11 @@ body {
     background-color: #9900ff; }
 
 .cross {
-  background: url("/images/cross.gif") no-repeat;
+  background: url("/images/cross.jpg") no-repeat;
   background-size: cover; }
 
 .circle {
-  background: url("/images/circle.gif") no-repeat;
+  background: url("/images/circle.jpg") no-repeat;
   background-size: cover; }
 
 .base-font, .message {
